@@ -132,6 +132,17 @@
                         &:focus img {
                             width: 130px;
                             height: 60px;
+
+                            @media only screen and (max-width: 768px) {
+                                width: 105px;
+                                height: 50px;
+                            }
+
+                            @media only screen and (max-width: 576px) {
+                                width: 94px;
+                                height: 37px;
+
+                            }
                         }
 
                         img {
@@ -140,17 +151,23 @@
                             padding: 8px;
                             width: 120px;
                             height: 50px;
+
+                            @media only screen and (max-width: 768px) {
+                                width: 95px;
+                                height: 40px;
+                                padding: 4px;
+
+                            }
+
+                            @media only screen and (max-width: 576px) {
+                                width: 85px;
+                                height: 33px;
+                                padding: 4px;
+                            }
                         }
-
-
                     }
 
 
-                    @media only screen and (max-width: 576px) {
-                        width: 85px;
-                        height: 30px;
-                        padding: 4px;
-                    }
 
 
                 }
