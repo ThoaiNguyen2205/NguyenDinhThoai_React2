@@ -1,0 +1,169 @@
+.bg-home {}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+.products {
+    .product-model {
+        width: 60%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 768px) {
+            width: 78%;
+        }
+
+        @media only screen and (max-width: 576px) {
+            width: 85%;
+        }
+
+        .product-left,
+        .product-right {
+            padding: 10%;
+
+
+            .product-card {
+                position: relative;
+                overflow: hidden;
+
+                .product-img {
+                    position: relative;
+                    margin: 0 auto;
+                    z-index: 10;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .product-title {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(247, 144, 0, 0.4);
+                    padding: 5px;
+                    z-index: 100;
+                    animation: aniChangeTitle 1s;
+                    transition: all 0.5s;
+
+                    @media only screen and (max-width: 576px) {
+                        padding: 0;
+                    }
+
+                    h5 {
+                        color: blue;
+                        font-weight: normal;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 14px;
+                        }
+
+                        @media only screen and (max-width: 576px) {
+                            font-size: 13px;
+                            margin-bottom: 0px;
+                        }
+
+
+                    }
+
+                    p {
+                        color: white;
+                        font-size: 14px;
+                        margin-bottom: 0;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 10px;
+                        }
+
+                        @media only screen and (max-width: 576px) {
+                            font-size: 9px;
+
+                        }
+
+                    }
+                }
+
+                .product-item {
+
+                    img {
+                        width: 51%;
+                        position: absolute;
+                        top: 24%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 100;
+                        opacity: 0.6;
+                        animation: aniChangeGlasses 1s;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.product-select {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        background-color: rgba(241, 241, 241, 0.6);
+
+        .row {
+            .col-lg-2 {
+                margin: 24px 0;
+
+                @media only screen and (max-width: 768px) {
+                    margin: 0;
+                }
+
+                .glasses-item {
+                    cursor: pointer;
+                    transition: all 1s;
+                    padding: 8px 0;
+
+                    img {
+                        background-color: white;
+                        border: 1px solid transparent;
+                        transition: all 0.5s;
+                        padding: 8px;
+
+                        &:hover {
+                            border: 2px solid green;
+                        }
+
+                        @media only screen and (max-width: 576px) {
+                            width: 85px;
+                            height: 30px;
+                            padding: 4px;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}
+
+@keyframes aniChangeGlasses {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 51%;
+    }
+}
+
+@keyframes aniChangeTitle {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: 0;
+    }
+}

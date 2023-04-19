@@ -1,0 +1,154 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.products .product-model {
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .products .product-model {
+    width: 78%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .products .product-model {
+    width: 85%;
+  }
+}
+.products .product-model .product-left,
+.products .product-model .product-right {
+  padding: 10%;
+}
+.products .product-model .product-left .product-card,
+.products .product-model .product-right .product-card {
+  position: relative;
+  overflow: hidden;
+}
+.products .product-model .product-left .product-card .product-img,
+.products .product-model .product-right .product-card .product-img {
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+}
+.products .product-model .product-left .product-card .product-img img,
+.products .product-model .product-right .product-card .product-img img {
+  width: 100%;
+}
+.products .product-model .product-left .product-card .product-title,
+.products .product-model .product-right .product-card .product-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(247, 144, 0, 0.4);
+  padding: 5px;
+  z-index: 100;
+  animation: aniChangeTitle 1s;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 576px) {
+  .products .product-model .product-left .product-card .product-title,
+  .products .product-model .product-right .product-card .product-title {
+    padding: 0;
+  }
+}
+.products .product-model .product-left .product-card .product-title h5,
+.products .product-model .product-right .product-card .product-title h5 {
+  color: blue;
+  font-weight: normal;
+}
+@media only screen and (max-width: 768px) {
+  .products .product-model .product-left .product-card .product-title h5,
+  .products .product-model .product-right .product-card .product-title h5 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .products .product-model .product-left .product-card .product-title h5,
+  .products .product-model .product-right .product-card .product-title h5 {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+}
+.products .product-model .product-left .product-card .product-title p,
+.products .product-model .product-right .product-card .product-title p {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .products .product-model .product-left .product-card .product-title p,
+  .products .product-model .product-right .product-card .product-title p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .products .product-model .product-left .product-card .product-title p,
+  .products .product-model .product-right .product-card .product-title p {
+    font-size: 9px;
+  }
+}
+.products .product-model .product-left .product-card .product-item img,
+.products .product-model .product-right .product-card .product-item img {
+  width: 51%;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  opacity: 0.6;
+  animation: aniChangeGlasses 1s;
+}
+
+.product-select .container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(241, 241, 241, 0.6);
+}
+.product-select .container .row .col-lg-2 {
+  margin: 24px 0;
+}
+@media only screen and (max-width: 768px) {
+  .product-select .container .row .col-lg-2 {
+    margin: 0;
+  }
+}
+.product-select .container .row .col-lg-2 .glasses-item {
+  cursor: pointer;
+  transition: all 1s;
+  padding: 8px 0;
+}
+.product-select .container .row .col-lg-2 .glasses-item img {
+  background-color: white;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  padding: 8px;
+}
+.product-select .container .row .col-lg-2 .glasses-item img:hover {
+  border: 2px solid green;
+}
+@media only screen and (max-width: 576px) {
+  .product-select .container .row .col-lg-2 .glasses-item img {
+    width: 85px;
+    height: 30px;
+    padding: 4px;
+  }
+}
+
+@keyframes aniChangeGlasses {
+  from {
+    width: 0;
+  }
+  to {
+    width: 51%;
+  }
+}
+@keyframes aniChangeTitle {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
