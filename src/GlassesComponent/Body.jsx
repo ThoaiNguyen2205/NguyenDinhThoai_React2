@@ -16,16 +16,14 @@ export default class Body extends Component {
   renderDataGlasses = () => {
     return dataGlasses.map((glasses, index) => {
       return (
-        <div
-          className="col-lg-2 col-md-3 col-sm-4 text-center"
-          key={index}
-          onClick={() => {
-            this.changeGlasses(glasses);
-          }}
-        >
+        <div className="col-lg-2 col-md-3 col-sm-4 text-center" key={index}>
           <div className="glasses-item ">
-            <button>
-              <img src={glasses.url} alt="..." width={120} height={50} />
+            <button
+              onClick={() => {
+                this.changeGlasses(glasses);
+              }}
+            >
+              <img src={glasses.url} alt="..." />
             </button>
           </div>
         </div>

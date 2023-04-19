@@ -125,10 +125,16 @@
 .product-select .container .row .col-lg-2 .glasses-item button:focus {
   background-color: rgba(7, 152, 7, 0.7);
 }
+.product-select .container .row .col-lg-2 .glasses-item button:focus img {
+  width: 130px;
+  height: 60px;
+}
 .product-select .container .row .col-lg-2 .glasses-item button img {
   border: 1px solid transparent;
   transition: all 0.5s;
   padding: 8px;
+  width: 120px;
+  height: 50px;
 }
 @media only screen and (max-width: 576px) {
   .product-select .container .row .col-lg-2 .glasses-item {
