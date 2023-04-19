@@ -24,7 +24,9 @@ export default class Body extends Component {
           }}
         >
           <div className="glasses-item ">
-            <img src={glasses.url} alt="..." width={120} height={50} />
+            <button>
+              <img src={glasses.url} alt="..." width={120} height={50} />
+            </button>
           </div>
         </div>
       );

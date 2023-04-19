@@ -116,20 +116,22 @@
 }
 .product-select .container .row .col-lg-2 .glasses-item {
   cursor: pointer;
-  transition: all 1s;
   padding: 8px 0;
 }
-.product-select .container .row .col-lg-2 .glasses-item img {
-  background-color: white;
+.product-select .container .row .col-lg-2 .glasses-item button {
+  transition: all 0.5s;
+  border: none;
+}
+.product-select .container .row .col-lg-2 .glasses-item button:focus {
+  background-color: rgba(7, 152, 7, 0.7);
+}
+.product-select .container .row .col-lg-2 .glasses-item button img {
   border: 1px solid transparent;
   transition: all 0.5s;
   padding: 8px;
 }
-.product-select .container .row .col-lg-2 .glasses-item img:hover {
-  border: 2px solid green;
-}
 @media only screen and (max-width: 576px) {
-  .product-select .container .row .col-lg-2 .glasses-item img {
+  .product-select .container .row .col-lg-2 .glasses-item {
     width: 85px;
     height: 30px;
     padding: 4px;
